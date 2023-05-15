@@ -31,7 +31,7 @@ export const LogoImage = styled.img`
  
 `;
 export const LimitedContainer = styled.div`
-  border: 1px solid black;
+
   display: flex;
   justify-content: center;
   width: 85%;
