@@ -1,5 +1,9 @@
+
+import Input from "../../../shared/inputs/input/input";
 import { BackgroundImage, ContainerLogin, LogoImage } from "../styles/loginScreens.style";
 import { LimitedContainer } from './../styles/loginScreens.style';
+
+
 function LoginScreen() {
     return (
         <div>
@@ -7,6 +11,7 @@ function LoginScreen() {
             <ContainerLogin>
                 <LimitedContainer>
                     <LogoImage src="./logoLogin.png" />
+                    <Input />
                 </LimitedContainer>
             </ContainerLogin>
 

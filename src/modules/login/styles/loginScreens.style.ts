@@ -27,12 +27,14 @@ export const ContainerLogin = styled.div`
 `
 
 export const LogoImage = styled.img`
-   width: 200px;
+   width: 250px;
+   margin: 0 auto ;
  
 `;
 export const LimitedContainer = styled.div`
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 85%;
   max-width: 476px;
