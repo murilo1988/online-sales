@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+
 export const BackgroundImage = styled.img`
     position: absolute;
     top: 0;
@@ -26,17 +27,29 @@ export const ContainerLogin = styled.div`
 
 `
 
+export const TitleLogin = styled.h1`
+  font-family: 'Merriweather Sans', sans-serif;
+  background-image: linear-gradient(-225deg,#1C2E35 0%,#43C6B1 33%,#43C6B1 66%,#1C2E35 99%);
+  font-size: 50px;
+  background-clip: text;
+  -webkit-background-clip:text ;
+  -webkit-text-fill-color: transparent;
+     
+`
+
 export const LogoImage = styled.img`
-   width: 250px;
-   margin: 0 auto ;
+   width: 202px;
+   
  
 `;
 export const LimitedContainer = styled.div`
 
+  margin-bottom: 55px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 85%;
+  align-items: center;
   max-width: 476px;
 
 `;

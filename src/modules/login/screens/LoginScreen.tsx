@@ -1,6 +1,7 @@
 
 import Input from "../../../shared/inputs/input/input";
-import { BackgroundImage, ContainerLogin, LogoImage } from "../styles/loginScreens.style";
+import { inputThemeLoginStyle } from "../../../shared/inputs/input/input.style";
+import { BackgroundImage, ContainerLogin, LogoImage, TitleLogin } from "../styles/loginScreens.style";
 import { LimitedContainer } from './../styles/loginScreens.style';
 
 
@@ -11,10 +12,14 @@ function LoginScreen() {
             <ContainerLogin>
                 <LimitedContainer>
                     <LogoImage src="./logoLogin.png" />
-                    <Input />
+                    <TitleLogin >
+                        OrganicWeb
+                    </TitleLogin>
+                    <Input title="Email" id="outlined-basic" inputTheme={inputThemeLoginStyle} {...{}} />
+                    <Input title="Password" id="outlined-basic" inputTheme={inputThemeLoginStyle} />
                 </LimitedContainer>
             </ContainerLogin>
-
+            z
         </div>
     )
 }

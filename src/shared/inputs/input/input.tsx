@@ -1,30 +1,25 @@
 import TextField from "@mui/material/TextField"
-import { createTheme, ThemeProvider } from "@mui/material/styles"
+import { InputProps } from "@mui/material/Input/Input";
+import { ThemeProvider } from "@mui/material/styles"
 import Stack from "@mui/material/Stack";
 import { BoxInput } from "./input.style";
-const Input = () => {
-    const borderInputLogin = createTheme({
-        palette: {
-            primary: {
-                main: '#172C33'
-            }
-        }
-    })
+interface InputInfo extends InputProps {
+    title: string,
+    id?: string,
+    inputTheme: object,
+}
+
+const Input = ({ title, id, inputTheme, ...props }: InputInfo) => {
 
     return (
         <BoxInput>
-            <ThemeProvider theme={borderInputLogin}>
-                <Stack spacing={2}>
-                    < TextField id='outlined-basic' label='E-mail' size="small" />
-                    < TextField id='outlined-basic' label='Password' size="small" />
+            <ThemeProvider theme={inputTheme}>
+                <Stack >
+                    < TextField id={`${id}`} label={`${title}`} InputProps={{ ...props }} />
                 </Stack>
             </ThemeProvider>
         </BoxInput>
-
     )
-
-
 }
-
 
 export default Input
